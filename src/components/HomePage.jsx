@@ -90,7 +90,7 @@ const HomePage = () => {
                           <h3>Venta y Colocación de Lámparas</h3>
                           <p>Te ofrecemos una selección de lámparas de alta calidad y nos encargamos de su instalación para asegurar un rendimiento óptimo de la iluminación de tu auto.
                           </p>
-                          <a href="https://wa.me/5491153416197?text=Hola,%20quiero%20consultar%20sobre%20sus%20servicios%20de%20lámparas" target="_blank" rel="noopener noreferrer">
+                          <a href="https://wa.me/5491168081631?text=Hola,%20quiero%20consultar%20sobre%20sus%20servicios%20de%20lámparas" target="_blank" rel="noopener noreferrer">
                             <button>
                               Consultar <FaArrowRight />
                             </button>
@@ -107,7 +107,7 @@ const HomePage = () => {
                       <div className="service-content">
                           <h3>Venta y Colocación de Aceites Sueltos y Envasados</h3>
                           <p> Disponemos de aceites minerales, semisintéticos y sintéticos.</p>
-                          <a href="https://wa.me/5491153416197?text=Hola,%20quiero%20consultar%20sobre%20sus%20servicios%20de%20aceites" target="_blank" rel="noopener noreferrer">
+                          <a href="https://wa.me/5491168081631?text=Hola,%20quiero%20consultar%20sobre%20sus%20servicios%20de%20aceites" target="_blank" rel="noopener noreferrer">
                             <button>
                               Consultar <FaArrowRight />
                             </button>
@@ -125,7 +125,7 @@ const HomePage = () => {
                           <h3>Venta y Colocación de Baterías</h3>
                           <p>Contamos con baterías de distintas marcas y modelos, y nos ocupamos de la instalación para que tu auto esté siempre listo para arrancar.
                           </p>
-                          <a href="https://wa.me/5491153416197?text=Hola,%20quiero%20consultar%20sobre%20sus%20servicios%20de%20baterías" target="_blank" rel="noopener noreferrer">
+                          <a href="https://wa.me/5491168081631?text=Hola,%20quiero%20consultar%20sobre%20sus%20servicios%20de%20baterías" target="_blank" rel="noopener noreferrer">
                             <button>
                               Consultar <FaArrowRight />
                             </button>

@@ -78,7 +78,7 @@ const ProductDetailPage = () => {
               <div className="product_detail-content">
                 <h2 className="product_detail-name">{product.name}</h2>
                 <p className="product_detail-description">{product.description}</p>
-                <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5491168081631" target="_blank" rel="noopener noreferrer">
                   <button className="product_detail-btn">Consultar Producto</button>
                 </a>
               </div>
