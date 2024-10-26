@@ -81,9 +81,6 @@ const ProductsPage = () => {
       <div className="products-container">
         <div className="products-title">
           <h2>NUESTROS PRODUCTOS</h2>
-          <div className="products-subtitle">
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, in</h4>
-          </div>
         </div>
 
         {/* Botones de categorías */}

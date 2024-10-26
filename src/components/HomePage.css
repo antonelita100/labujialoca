@@ -1,184 +1,196 @@
 /* General Styles */
 .Home-Page {
-    overflow: hidden;
-  }
-  
-  .banner-slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    padding: 0 5%; /* Margen a los lados */
-    background-image: url('../assets/Banner.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .banner-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 2;
-    max-width: 50%;
-    color: white;
-    text-align: left; 
-    margin-left: 125px;
-  }
-  
-  .banner-content .small-title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .banner-content h1 {
-    font-size: 64px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-  }
-  
-  .banner-content .description {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
-  
-  .banner-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #b50c09;
-    color: white;
-    padding: 29px 34px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 700;
-    border-radius: 57px;
-    transition: 0.3s ease;
-    width: fit-content;
-    border: 1px solid #b50c09;
-    cursor: pointer;
-  }
-  
-  .banner-button:hover {
-    background-color: #192541;
-    border-color: #ffffff;
-    transform: translateY(-5px);
-    transition: all ease-in-out 0.3s;
-  }
-
-  .banner-button svg {
-    padding-left: 10px;
-    font-size: 20px;
+  overflow: hidden;
 }
-  
-  /* Imagen del Auto */
-  .overlay-image {
-    position: absolute; /* Asegura que la imagen esté sobrepuesta */
-    bottom: -30px; /* La coloca cerca del borde inferior */
-    right: 5%; /* Mantiene algo de margen derecho */
-    max-width:55%; /* Aumenta el tamaño de la imagen */
-    z-index: 1;
-  }
-  
-  .overlay-image img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
+
+.banner-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Ocupa toda la altura de la pantalla */
+  padding: 0 5%;
+  /* Margen a los lados */
+  background-image: url('../assets/Banner.jpg');
+  /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  max-width: 50%;
+  color: white;
+  text-align: left;
+  margin-left: 125px;
+}
+
+.banner-content .small-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.banner-content h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.banner-content .description {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.banner-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b50c09;
+  color: white;
+  padding: 29px 34px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 57px;
+  transition: 0.3s ease;
+  width: fit-content;
+  border: 1px solid #b50c09;
+  cursor: pointer;
+}
+
+.banner-button:hover {
+  background-color: #192541;
+  border-color: #ffffff;
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.3s;
+}
+
+.banner-button svg {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/* Imagen del Auto */
+.overlay-image {
+  position: absolute;
+  /* Asegura que la imagen esté sobrepuesta */
+  bottom: -30px;
+  /* La coloca cerca del borde inferior */
+  right: 5%;
+  /* Mantiene algo de margen derecho */
+  max-width: 55%;
+  /* Aumenta el tamaño de la imagen */
+  z-index: 1;
+}
+
+.overlay-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Responsive */
 @media (max-width: 1498px) {
-    .banner {
-      flex-direction: column;
-      height: 1200px;
-      padding: 0 !important;
-    }
-  
-    .banner-content {
-      max-width: 100%;
-      text-align: center;
-      margin-left: 0;
-      margin-top:15%; /* Ajuste del espacio superior para pantallas medianas */
-    }
-
-    .banner-button {
-        margin: 0 auto; /* Centra el botón */
-        margin-top: 20px;
-    }
-  
-  
-    .overlay-image {
-      max-width: 80%;
-      margin-top: 20px;
-      position: static; /* Asegura que la imagen esté debajo del texto */
-      margin-left: auto;
-      
-    }
-  
+  .banner {
+    flex-direction: column;
+    height: 1200px;
+    padding: 0 !important;
   }
-  
-  @media (max-width: 768px) {
-    .banner {
-      height: auto;
-    }
 
-    .banner-content {
-      margin-top: 20%;
-      text-align: center;
-    }
-  
-    .banner-button {
-      font-size: 0.9em;
-      padding: 20px 30px;
-    }
-  
-    .overlay-image {
-      max-width: 90%;
-      margin-top: 20px;
-      position: static;
-    }
+  .banner-content {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 15%;
+    /* Ajuste del espacio superior para pantallas medianas */
   }
-  
-  @media (max-width: 560px) {
-    .banner {
-      height: auto;
-    }
-  
-    .banner-content h1 {
-      font-size: 50px;
-    }
 
-    .banner-content .description{
-      font-size: 15px;
-    }
-  
-    .banner-button {
-      font-size: 0.8em;
-      padding: 15px 25px;
-    }
-  
-    .overlay-image {
-      max-width: 100%; /* Asegura que la imagen del auto ocupe todo el ancho disponible */
-      position: static; /* Coloca la imagen debajo del contenido */
-    }
+  .banner-button {
+    margin: 0 auto;
+    /* Centra el botón */
+    margin-top: 20px;
+  }
+
+
+  .overlay-image {
+    max-width: 80%;
+    margin-top: 20px;
+    position: static;
+    /* Asegura que la imagen esté debajo del texto */
+    margin-left: auto;
+
+  }
+
 }
 
-@media (max-width: 420px){
-  .banner-content h1{
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+  }
+
+  .banner-content {
+    margin-top: 20%;
+    text-align: center;
+  }
+
+  .banner-button {
+    font-size: 0.9em;
+    padding: 20px 30px;
+  }
+
+  .overlay-image {
+    max-width: 90%;
+    margin-top: 20px;
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .banner {
+    height: auto;
+  }
+
+  .banner-content h1 {
+    font-size: 50px;
+  }
+
+  .banner-content .description {
+    font-size: 15px;
+  }
+
+  .banner-button {
+    font-size: 0.8em;
+    padding: 15px 25px;
+  }
+
+  .overlay-image {
+    max-width: 100%;
+    /* Asegura que la imagen del auto ocupe todo el ancho disponible */
+    position: static;
+    /* Coloca la imagen debajo del contenido */
+  }
+}
+
+@media (max-width: 420px) {
+  .banner-content h1 {
     font-size: 35px;
     padding: 0 5px;
   }
 
-  .banner-content .description{
+  .banner-content .description {
     margin: 0 20px;
   }
 
@@ -186,156 +198,159 @@
 
 /* Services */
 
-.services-section{
-    padding: 70px;
-    background-color: #ffffff;
+.services-section {
+  padding: 70px;
+  background-color: #ffffff;
 }
 
-.services-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+.services-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 
 }
-  
+
 .services {
-    padding: 20px; 
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-  
-.service {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.service-image img{
-    width: 300px;
-    height: 300px;
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.service-image img {
+  width: 300px;
+  height: 300px;
 }
 
 .icon-container {
-    position: absolute;
-    top: 220px;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-.service-content{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 30px;
-    height: 280px;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.service h3{
-    text-transform: uppercase;
+.service-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 30px;
+  height: 280px;
+}
+
+.service h3 {
+  text-transform: uppercase;
 }
 
 .service p {
-  flex-grow: 1; /* Esto asegura que el párrafo ocupe el espacio disponible */
+  flex-grow: 1;
+  /* Esto asegura que el párrafo ocupe el espacio disponible */
 }
 
-.service button{
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #b50c09;
-    margin-top: auto;
-    transition: 0.3s ease;
-    border: none;
-    background: none;
-    line-height: 21px;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
+.service button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #b50c09;
+  margin-top: auto;
+  transition: 0.3s ease;
+  border: none;
+  background: none;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .service button::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #b50c09;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50%);
-    transition: width 0.3s ease; /* Animación suave */
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #b50c09;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  /* Animación suave */
 }
 
 .service button span {
-    position: relative;
-    display: inline-block;
-  }
-  
-.service button:hover::after {
-    width: calc(100% - 10px); /* Ajusta al ancho del texto */
+  position: relative;
+  display: inline-block;
 }
 
-.service button svg{
-    padding-left: 10px;
-    font-size: 20px;
+.service button:hover::after {
+  width: calc(100% - 10px);
+  /* Ajusta al ancho del texto */
+}
+
+.service button svg {
+  padding-left: 10px;
+  font-size: 20px;
 }
 
 @media (max-width: 437px) {
 
-  .services-section{
+  .services-section {
     padding: 20px;
   }
 
-  .service{
+  .service {
     width: 350px;
   }
 
-  .service-content{
+  .service-content {
     height: 200px;
     padding: 20px;
   }
-  
-  .service-image img{
+
+  .service-image img {
     height: 200px;
     width: auto;
   }
 
-  .service p{
+  .service p {
     font-size: 12px;
   }
 
-  .service h3{
+  .service h3 {
     font-size: 14px;
   }
 
-  .icon-container{
+  .icon-container {
     top: 140px;
     width: 40px;
     height: 40px;
   }
 
-  .icon-container svg{
+  .icon-container svg {
     width: 30px;
     height: 30px;
   }
@@ -347,12 +362,12 @@
 .testimonials {
   padding-top: 25px;
   padding-bottom: 50px;
-  background-color: #192541;
+  background-color: #B50C09;
   text-align: center;
 }
 
 .testimonials-icon svg {
-  color: #b50c09;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,21 +382,26 @@
 .slider {
   display: flex;
   overflow: hidden;
-  flex-wrap: wrap; /* Permite que los testimonios se envuelvan si no caben en una línea */
+  flex-wrap: wrap;
+  /* Permite que los testimonios se envuelvan si no caben en una línea */
 }
 
 .testimonial-slide {
-  padding: 20px; /* Ajusta el padding */
+  padding: 20px;
+  /* Ajusta el padding */
   font-style: italic;
   background-color: #ffffff;
-  margin: 10px; /* Mantén un margen adecuado */
-  flex: 1 1 calc(33.333% - 20px); /* Muestra 3 testimonios por fila en pantallas grandes */
-  max-width: 500px; /* Establece un ancho máximo */
+  margin: 10px;
+  /* Mantén un margen adecuado */
+  flex: 1 1 calc(33.333% - 20px);
+  /* Muestra 3 testimonios por fila en pantallas grandes */
+  max-width: 500px;
+  /* Establece un ancho máximo */
   box-shadow: 0px 6px 8px 0 #434f6acf;
   transition: transform 0.3s;
 }
 
-.testimonial-slide h4{
+.testimonial-slide h4 {
   color: #b50c09;
 }
 
@@ -389,136 +409,140 @@
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 768px) {
   .testimonial-slide {
-      flex: 1 1 calc(50% - 20px); /* Muestra 2 testimonios por fila en pantallas medianas */
-      max-width: 300px;
+    flex: 1 1 calc(50% - 20px);
+    /* Muestra 2 testimonios por fila en pantallas medianas */
+    max-width: 300px;
   }
 }
 
 @media (max-width: 550px) {
   .testimonial-slide {
-      flex: 1 1 100%; /* 1 testimonio por fila en pantallas pequeñas */
+    flex: 1 1 100%;
+    /* 1 testimonio por fila en pantallas pequeñas */
   }
 
   .testimonials-icon svg {
-      font-size: 40px; /* Reduce el tamaño del icono en pantallas más pequeñas */
+    font-size: 40px;
+    /* Reduce el tamaño del icono en pantallas más pequeñas */
   }
 
   .testimonials {
-      padding-top: 15px;
-      padding-bottom: 30px; /* Ajusta el padding para pantallas pequeñas */
+    padding-top: 15px;
+    padding-bottom: 30px;
+    /* Ajusta el padding para pantallas pequeñas */
   }
 }
 
-@media (max-width: 360px){
-  .testimonial-slide{
+@media (max-width: 360px) {
+  .testimonial-slide {
     max-width: 220px;
   }
 }
 
 
-  
+
 /* ABOUT */
 .about {
-    padding: 60px;
-    background-color: #ffffff;
+  padding: 60px;
+  background-color: #ffffff;
 }
 
 .about-container {
   max-width: 1100px;
-  background-color: #192541;
+  background-color: #B50C09;
   display: flex;
   margin: 0 auto;
   align-items: stretch;
-  justify-content: space-between; 
+  justify-content: space-between;
   box-shadow: 0px 6px 38px 0 #a3a7aa;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .about img {
-  max-width: 50%; 
+  max-width: 50%;
   height: auto;
-  flex-grow: 1; 
+  flex-grow: 1;
   object-fit: cover;
 }
 
 .about-text_container {
-    color: #ffffff;
-    flex: 1; 
-    text-align: center; 
-    padding: 50px;
-    max-width: 100%; 
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+  padding: 50px;
+  max-width: 100%;
 }
 
 .about-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 10px;
-    transition: 0.3s ease;
-    background: #b50c09;
-    line-height: 21px;
-    font-size: 13px;
-    padding: 19px 24px;
-    border-radius: 57px;
-    font-weight: 700;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid #b50c09;
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  background: #b50c09;
+  line-height: 21px;
+  font-size: 13px;
+  padding: 19px 24px;
+  border-radius: 57px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #b50c09;
+  cursor: pointer;
 }
 
 .about-button:hover {
-    background-color: #192541;
-    border-color: #ffffff;
-    transform: translateY(-5px);
-    transition: all ease-in-out 0.3s;
+  background-color: #192541;
+  border-color: #ffffff;
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.3s;
 }
 
-.about-button svg{
-    padding-left: 10px;
-    font-size: 20px;
+.about-button svg {
+  padding-left: 10px;
+  font-size: 20px;
 }
 
 @media (max-width: 1120px) {
   .about-container {
-      flex-direction: column;
-      align-items: center; 
-      max-width: 55%;
+    flex-direction: column;
+    align-items: center;
+    max-width: 55%;
   }
 
   .about img {
-      max-width: 100%; 
-      height: auto;
-      margin-top: 20px; 
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
   }
 
   .about-text_container {
-      padding: 30px; 
+    padding: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .about{
+  .about {
     padding: 20px;
   }
-  
-  .about-container{
+
+  .about-container {
     max-width: 80%;
   }
-  
-  .about-text_container{
+
+  .about-text_container {
     padding: 20px;
   }
 }
 
 @media (max-width: 505px) {
-  .about-container{
+  .about-container {
     max-width: 400px;
   }
 
-  .about-button{
+  .about-button {
     padding: 14px 19px;
   }
 }

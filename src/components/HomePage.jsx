@@ -56,7 +56,7 @@ const HomePage = () => {
           <div className="banner">
             <div className="banner-content">
               <h1>ACCESORIOS Y<br />REPUESTOS DE AUTOS</h1>
-              <p className="description">Duis aute irure dolor in reprehenderit in voluptate <br /> velit esse Excepteur sint occaecat cupidatat non proident.</p>
+              <p className="description">Al servicio de nuestros clientes.</p>
               {/* Boton hacia productos */}
                 <a href="#products">
                 <button className="banner-button">

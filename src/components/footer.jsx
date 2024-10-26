@@ -27,8 +27,8 @@ const Footer = () => {
                 {/* Tercera columna: Info de contacto */}
                 <div className="footer-column contact-column-footer">
                     <h4>Contacto</h4>
-                    <p>Email: contacto@tuempresa.com</p>
-                    <p>Teléfono: +54 11 5341-6197</p>
+                    <p>Email: labujialocaexpress@gmail.com</p>
+                    <p>Teléfono: +54 11 6808-1631</p>
                     <p>Dirección: Av. Directorio 1503</p>
                 </div>
             </div>
