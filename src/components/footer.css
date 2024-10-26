@@ -1,0 +1,88 @@
+footer{
+    background-color: #212f4f;
+}
+.footer-container {
+    display: flex;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 40px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 10px;
+    width: 300px;
+  }
+
+  .logo-column{
+    margin-right: 30px;
+  }
+
+  .footer-logo {
+    max-width: 300px;
+    margin-top: 80px;
+  }
+  
+  .footer-text {
+    margin-top: 15px;
+  }
+  
+  .links-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .links-column ul li {
+    margin-bottom: 25px;
+  }
+  
+  .links-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .links-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-column p {
+    margin: 10px 0;
+  }
+  
+  
+.footer-copyright{
+    width: 100%;
+    background-color: #0000 ;
+    justify-content: center;
+    color: #ffff;
+}
+.footer-copyright .footer-text{
+    padding: 20px !important;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+      align-items: center; /* Alinear al centro */
+  }
+
+  .logo-column {
+      margin-right: 0; /* Eliminar margen a la derecha */
+      margin-bottom: 20px; /* Agregar un margen inferior para separación */
+  }
+
+  .footer-column {
+      width: 100%; /* Hacer que cada columna ocupe el 100% */
+      margin: 10px 0; /* Margen vertical entre columnas */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    max-width: 250px;
+    margin-top: 20px;
+}
+}

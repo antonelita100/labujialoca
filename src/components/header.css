@@ -1,0 +1,148 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0); 
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 10; 
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.6) !important; /* Fondo semitransparente */
+  backdrop-filter: blur(10px) !important; /* Efecto de desenfoque */
+  -webkit-backdrop-filter: blur(10px) !important; /* Efecto de desenfoque para Safari */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header.product-page {
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: #fff;
+}
+
+.header.product-page + .main-content {
+  padding-top: 200px; 
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 50vw;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: right;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.nav_container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.nav_container ul li {
+  margin-left: 20px;
+}
+
+.nav_item {
+  position: relative;
+  font-size: 20px;
+  padding: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.contact-button {
+  background-color: #b50c09;
+  padding: 15px 24px;
+  border-radius: 57px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1120px) {
+  .nav_container {
+    position: fixed;
+    top: 99px; /* Debajo del header */
+    right: -70%; /* Fuera de la pantalla al principio */
+    height: auto;
+    width: 50%; /* Ocupa 50% del ancho */
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: right 0.3s ease-in-out; /* Transición suave */
+    z-index: 9;
+  }
+
+  .nav_container.active {
+    right: 0; /* Muestra el menú al activarlo */
+  }
+
+  .nav_container ul {
+    display: flex;
+    flex-direction: column; /* Lista vertical */
+    width: 100%;
+  }
+
+  .nav_container ul li {
+    margin: 10px 0;
+  }
+
+  .nav_item {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%; /* Los items ocupan todo el ancho */
+  }
+
+  .hamburger {
+    display: flex; /* Muestra el icono de hamburguesa en pantallas pequeñas */
+  }
+}
