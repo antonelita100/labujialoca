@@ -61,8 +61,8 @@
 }
 
 .product_detail-btn:hover {
-  background-color: #192541;
-  border-color: #192541;
+  background-color: #8B0907;
+  border-color: #8B0907;
   transition: all ease-in-out 0.3s;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .related-product-btn a:hover {
-  background-color: #192541;
+  background-color: #8B0907;
   border-color: #ffffff;
   transition: all ease-in-out 0.3s;
 }

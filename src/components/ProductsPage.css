@@ -60,8 +60,8 @@
 }
 
 .category-buttons button:hover {
-  background-color: #192541;
-  border-color: #192541;
+  background-color: #8B0907;
+  border-color: #8B0907;
 }
 
 .product-content {
@@ -103,7 +103,7 @@
 }
 
 .product-btn a:hover {
-  background-color: #192541;
+  background-color: #8B0907;
   border-color: #ffffff;
   transition: all ease-in-out 0.3s;
 }
@@ -132,8 +132,8 @@
 }
 
 .product-view_more button:hover {
-  border-color: #192541;
-  background-color: #192541;
+  border-color: #8B0907;
+  background-color: #8B0907;
 }
 
 @media (max-width: 768px) {
