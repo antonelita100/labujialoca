@@ -176,7 +176,7 @@ const HomePage = () => {
                 <div class="about-header"> 
                     <h2>SOBRE NOSOTROS</h2>
                 </div>
-                <p>La Bujía Loca, fundada en los 80 por Mario Lowenstein y Susana Friesem, se consolidó durante<b> 40 años en el mercado automotriz </b>gracias a su atención personalizada y productos de calidad. En 2023, los fundadores decidieron donar la empresa a sus empleados como reconocimiento a su esfuerzo y dedicación</p>
+                <p>La Bujía Loca, fundada en los 80 por Mario Lowenstein y Susana Friesem, se consolidó durante<b> 40 años en el mercado automotriz </b>gracias a su atención personalizada y productos de calidad. En 2023, los fundadores decidieron ceder el nombre y la clientela de la empresa a sus empleados como reconocimiento a su esfuerzo y dedicación</p>
                 <p>Ahora, bajo la gestión de sus ex empleados en<b> su nueva ubicación en Av. Directorio 1503</b>, La Bujía Loca sigue manteniendo sus valores de confianza y satisfacción del cliente, ofreciendo un servicio cercano y especializado.</p>
                 <a href="#form">
                   <button className='about-button'>
