@@ -85,7 +85,7 @@ const ContactForm = () => {
               </div>
               <div className="info-content">
                 <h3>UBICACIÓN</h3>
-                <span>Av. Directorio 1503, Buenos Aires</span>
+                <span>Av. Directorio 1503, Caballito.</span>
               </div>
             </div>
 
